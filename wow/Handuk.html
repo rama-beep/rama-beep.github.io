@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>KIRARA ALLSHOP</title>
+    <style type="text/css">
+    #highlight{font:Arial,Sans-Serif;}
+* {box-sizing: border-box;}
+
+.header{
+    font-family: 'Mulish', sans-serif;
+
+}
+
+.product-image{
+    float: left;
+    padding: 20px 0px;
+    width: 5%;
+}
+
+.product-desc{
+    float: right;
+    width: 43%;
+    box-sizing: border-box;
+    padding: 20px 70px;
+    overflow: hidden;
+}
+#satu{
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
+}
+
+.btn{
+    background: #000000;
+    padding: 20px 40px;
+    display:inline-block;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.price{
+    display:inline-block;
+    padding: 15px;
+    font-family: 'Mulish', sans-serif;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- header -->
+<div class="header">
+    <h1><center><script language="javascript" type="text/javascript">
+     var teks="KIRARA ALLSHOP" // teks Anda di sini
+     var speed=20 // atur kecepatan perubahan warna
+
+if (document.all||document.getElementById) {
+     document.write('<span id="highlight">' + teks + '</span>')
+     var storetext=document.getElementById? document.getElementById("highlight") :
+document.all.highlight
+} else document.write(text)
+var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+
+var r=1
+var g=1
+var b=1
+var seq=1
+
+function changetext() {
+     rainbow="#"+hex[r]+hex[g]+hex[b]
+     storetext.style.color=rainbow
+}
+
+function change() {
+if (seq==6) {
+b--
+if (b==0)
+seq=1
+}
+if (seq==5) {
+r++
+if (r==12)
+seq=6
+}
+if (seq==4) {
+g--
+if (g==0)
+seq=5
+}
+if (seq==3) {
+b++
+if (b==12)
+seq=4
+}
+if (seq==2) {
+r--
+if (r==0)
+seq=3
+}
+if (seq==1) {
+g++
+if (g==12)
+seq=2
+}
+changetext()
+}
+
+function starteffect() {
+     if (document.all||document.getElementById)
+     flash=setInterval("change()",speed)
+}
+
+starteffect()
+</script></center></h1>
+</div>
+<!-- end header -->
+
+<!-- Content -->
+<div class="Content">
+    <div class="product-image">
+        <img src="Gambar/handuk.jpg">
+    </div>
+    <div class="product-desc">
+        <h2>Handuk</h2>
+        <div id="satu"><p>desc adalah singkatan dari kata bahasa inggris description, 
+        yang berarti anda disuruh untuk mendiskripsikan sesuatu. 
+        Misal ada orang yang nge-ask anda, 
+        “desc aku dong” berarti anda disuruh mendiskripsikan orang yang nge-ask anda.</p></div>
+        <div class="btn"><a href="" style="color:#ffffff;">Beli Sekarang</a></div>
+        <div class="price">Rp 7.500</div>
+    </div>
+</div>
+<!-- end Content -->
+
+<!-- footer -->
+<div class="footer">
+<p>&copy;2020, Kirara allshop</p>
+</div>
+<!-- end footer -->
+</body>
+</html>
